@@ -1,27 +1,57 @@
-# Neonatal Mouse Heart Segmentation with 3D UNet
-Our project focuses on accurately segmenting three critical cardiac classes: Atrium, Ventricle, and Trabeculae. Leveraging advanced techniques in data preprocessing and augmentation, we have enhanced the robustness and generalization capabilities of the model. Our efforts have culminated in an impressive IoU Score of 0.84, affirming the model's exceptional accuracy in segmenting these distinct cardiac structures.
+# ❤️ 3D U-Net for Neonatal Mouse Heart Segmentation
 
-## Project Highlights
-1. 3D UNet Model:
-We have designed and fine-tuned a 3D UNet model tailored to the specific challenges of neonatal mouse heart segmentation. This model leverages the power of deep learning to provide precise and reliable segmentation results.
+[![GitHub repo](https://img.shields.io/badge/GitHub-Project-green?logo=github)](https://github.com/vinaykadam007/3DUnet-neonatalheart-segmentation)  
+[![Python](https://img.shields.io/badge/Python-3.8+-blue?logo=python)](https://www.python.org/)  
+[![Deep Learning](https://img.shields.io/badge/Deep%20Learning-3D%20U--Net-orange)]()  
+[![Microscopy](https://img.shields.io/badge/Light--Sheet-Microscopy-red)]()
 
-2. Three Essential Classes:
-The model is trained to segment three vital cardiac structures: Atrium, Ventricle, and Trabeculae. This enables detailed analysis and understanding of the neonatal mouse heart's anatomy.
+---
 
-3. Data Preprocessing:
-To improve model performance, we have implemented robust data preprocessing techniques. This includes data normalization, alignment, and quality enhancement, ensuring that the model receives the best input for accurate segmentation.
+## 📌 Overview
+This project focuses on **3D U-Net–based segmentation** of **cardiac light-sheet fluorescence microscopy (LSFM) images** of neonatal mouse hearts. The pipeline was designed to handle **large volumetric datasets (1000+ slices per stack)**, enabling precise segmentation of multiple cardiac structures for downstream morphometric and functional analysis.
 
-4. Data Augmentation:
-Data augmentation is a key factor in enhancing model generalization. Our project includes various data augmentation strategies to expose the model to a wide range of variations, ultimately improving its ability to handle diverse real-world scenarios.
+**Objective:** Develop and fine-tune a 3D U-Net deep learning model for robust and accurate segmentation of neonatal mouse cardiac structures from large-scale LSFM datasets.  
+**Outcome:** Achieved **0.84 IoU** on validation and test datasets by leveraging preprocessing and **data augmentation** strategies (elastic transforms, flips, grid distortions) to enhance robustness and generalization【50†source】.
 
-5. Impressive IoU Score:
-The model's performance is validated by achieving an IoU Score of 0.84, showcasing its high accuracy in accurately segmenting neonatal mouse heart structures.
+---
 
-## Getting Started
-To explore and utilize this project, follow these steps:
+## 🧪 Methodology
 
-i. Clone this repository to your local machine.
-ii. Review the code and documentation to understand the model architecture and training process.
-iii. Access the preprocessed and augmented dataset used for training and evaluation.
-iv. Experiment with the model on your own data or use our provided dataset for segmentation tasks.
-v. Explore the model's results and evaluate its performance using the included evaluation metrics.
+- **Data:** Light-sheet microscopy datasets of neonatal mouse hearts (stacks of 1000+ images).  
+- **Preprocessing:**  
+  - Resized images to **512×512** pixels.  
+  - Applied grayscale normalization.  
+  - Augmentation pipeline (horizontal/vertical flips, elastic transforms, grid distortion).  
+- **Architecture:** 3D U-Net with encoder–decoder design, convolution layers, pooling, and transpose convolutions for upsampling【50†source】.
+- **Training:**  
+  - Loss: Dice + Cross-Entropy.  
+  - Optimizer: Adam.  
+  - Early stopping to prevent overfitting.  
+- **Evaluation Metric:** Intersection over Union (IoU).  
+
+---
+
+## 📊 Results
+
+### Without Augmentation
+- Validation IoU: **0.49** (poor generalization).  
+
+### With Augmentation
+- Validation IoU: **0.84**.  
+- Test IoU: ranged from **0.84 to 0.91** across different images【50†source】.
+
+### Sample Predictions
+| Input (Raw) | Ground Truth | Prediction |
+|-------------|--------------|------------|
+| ![val](https://drive.google.com/uc?export=view&id=your_val_img) | ![gt](https://drive.google.com/uc?export=view&id=your_gt_img) | ![pred](https://drive.google.com/uc?export=view&id=your_pred_img) |
+
+**Key Insight:** Data augmentation significantly boosted model generalization and segmentation precision, demonstrating feasibility of applying deep learning to large-scale cardiac imaging datasets【50†source】.
+
+---
+
+## 🙌 Acknowledgements
+This work was conducted as part of neonatal cardiac imaging research, integrating **3D deep learning** with **biomedical image analysis**.  
+
+---
+
+✨ If you find this project useful, please ⭐ the repo and share it with the community!
