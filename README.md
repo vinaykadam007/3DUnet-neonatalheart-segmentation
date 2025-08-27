@@ -11,7 +11,7 @@
 This project focuses on **3D U-Net–based segmentation** of **cardiac light-sheet fluorescence microscopy (LSFM) images** of neonatal mouse hearts. The pipeline was designed to handle **large volumetric datasets (1000+ slices per stack)**, enabling precise segmentation of multiple cardiac structures for downstream morphometric and functional analysis.
 
 **Objective:** Develop and fine-tune a 3D U-Net deep learning model for robust and accurate segmentation of neonatal mouse cardiac structures from large-scale LSFM datasets.  
-**Outcome:** Achieved **0.84 IoU** on validation and test datasets by leveraging preprocessing and **data augmentation** strategies (elastic transforms, flips, grid distortions) to enhance robustness and generalization【50†source】.
+**Outcome:** Achieved **0.84 IoU** on validation and test datasets by leveraging preprocessing and **data augmentation** strategies (elastic transforms, flips, grid distortions) to enhance robustness and generalization.
 
 ---
 
@@ -38,7 +38,7 @@ This project focuses on **3D U-Net–based segmentation** of **cardiac light-she
 
 ### With Augmentation
 - Validation IoU: **0.84**.  
-- Test IoU: ranged from **0.84 to 0.91** across different images【50†source】.
+- Test IoU: ranged from **0.84 to 0.91** across different images.
 
 ### Sample Predictions
 ![Prediction](https://drive.google.com/uc?export=view&id=1k8q5VoDRB4U8M7XD9ePpRx9hff4jjUmV)
