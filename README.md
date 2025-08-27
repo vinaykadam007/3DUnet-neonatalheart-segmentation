@@ -41,8 +41,6 @@ This project focuses on **3D U-Net–based segmentation** of **cardiac light-she
 - Test IoU: ranged from **0.84 to 0.91** across different images【50†source】.
 
 ### Sample Predictions
-| Input (Raw) | Ground Truth | Prediction |
-
 ![Prediction](https://drive.google.com/uc?export=view&id=1k8q5VoDRB4U8M7XD9ePpRx9hff4jjUmV)
 
 
