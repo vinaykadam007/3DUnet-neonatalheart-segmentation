@@ -42,8 +42,9 @@ This project focuses on **3D U-Net–based segmentation** of **cardiac light-she
 
 ### Sample Predictions
 | Input (Raw) | Ground Truth | Prediction |
-|-------------|--------------|------------|
-| ![val](https://drive.google.com/uc?export=view&id=your_val_img) | ![gt](https://drive.google.com/uc?export=view&id=your_gt_img) | ![pred](https://drive.google.com/uc?export=view&id=your_pred_img) |
+
+[!Prediction](https://drive.google.com/uc?export=view&id=1k8q5VoDRB4U8M7XD9ePpRx9hff4jjUmV)
+
 
 **Key Insight:** Data augmentation significantly boosted model generalization and segmentation precision, demonstrating feasibility of applying deep learning to large-scale cardiac imaging datasets【50†source】.
 
