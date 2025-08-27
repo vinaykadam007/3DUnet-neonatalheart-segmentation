@@ -22,7 +22,7 @@ This project focuses on **3D U-Net–based segmentation** of **cardiac light-she
   - Resized images to **512×512** pixels.  
   - Applied grayscale normalization.  
   - Augmentation pipeline (horizontal/vertical flips, elastic transforms, grid distortion).  
-- **Architecture:** 3D U-Net with encoder–decoder design, convolution layers, pooling, and transpose convolutions for upsampling【50†source】.
+- **Architecture:** 3D U-Net with encoder–decoder design, convolution layers, pooling, and transpose convolutions for upsampling.
 - **Training:**  
   - Loss: Dice + Cross-Entropy.  
   - Optimizer: Adam.  
