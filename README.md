@@ -1,4 +1,4 @@
-# ❤️ 3D U-Net for Neonatal Mouse Heart Segmentation
+# 3D U-Net for Neonatal Mouse Heart Segmentation
 
 [![GitHub repo](https://img.shields.io/badge/GitHub-Project-green?logo=github)](https://github.com/vinaykadam007/3DUnet-neonatalheart-segmentation)  
 [![Python](https://img.shields.io/badge/Python-3.8+-blue?logo=python)](https://www.python.org/)  
